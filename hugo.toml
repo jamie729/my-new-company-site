@@ -1,0 +1,114 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '弦引未来'
+theme = 'coHub'
+
+  # Main Menu
+  [[menu.Main]]
+  name = "智能产品"
+  url= "#gallery"
+  weight = 1
+  [[menu.Main]]
+  name = "灵巧手"
+  url= "#service"
+  weight = 2
+  [[menu.Main]]
+  name = "关于弦引"
+  url= "/about/"
+  weight = 3
+  [[menu.Main]]
+  name = "新闻中心"
+  url= "news"
+  weight = 4
+  # [[menu.Main]]
+  # name = "Pricing"
+  # url= "#pricing"
+  # weight = 5
+  [[menu.Main]]
+  name = "招贤纳士"
+  url= "#faq"
+  weight = 6
+  [[menu.Main]]
+  name = "联系我们"
+  url= "/contact/"
+  weight = 7
+
+  # Sitemap Menu
+  [[menu.sitemap]]
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 1
+  [[menu.sitemap]]
+  name = "Terms"
+  url = "/terms/"
+  weight = 2
+
+
+[params]
+  # theme_overrides = "css/overrides.css"
+  aboutPageURL = "news"
+  contactLink = "contact"
+  copyright = "© {year} <a href=\"https://staticmania.com/\" target=\"_blank\">StaticMania </a>"
+  fabFormURL =  "https://fabform.io/f/u00kv3-"
+  googleAnalytics = "G-JZ95FEWF9K"
+  logo = "images/logo.png"
+  footerlogo = "images/logo.png"
+  footerDescription = ""
+
+  [params.address]
+  address = "安徽省合肥市蜀山高新区中安创谷二期H3栋"
+  email = "business@sinxbot.com"
+  openingDesc = "Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days."
+  openingHours = "We are open from 7am — 7pm week days."
+  phone = "+86-13429850318"
+
+  [params.map]
+  APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
+  baiduAK = ""
+  mapLabel = "弦引未来科技有限公司"
+  latitude = "31.838759"
+  longitude = "117.100789"
+  pinImage = "images/pin.png"
+
+  # Social icons (order: 微信、微博、小红书、抖音、B站、视频号、X、电子邮箱、电话)
+  [[params.social]]
+  id = "wechat"
+  url = "javascript:void(0)"
+  qr  = "/images/qr/gongzhonghao.jpg"
+  weight = 1
+  [[params.social]]
+  id = "weibo"
+  url = "javascript:void(0)"
+  weight = 2
+  [[params.social]]
+  id = "redbook"
+  url = "javascript:void(0)"
+  qr  = "/images/qr/xiaohongshu.png"
+  weight = 3
+  [[params.social]]
+  id = "douyin"
+  url = "javascript:void(0)"
+  qr  = "/images/qr/douyin.png"
+  weight = 4
+  [[params.social]]
+  id = "bilibili"
+  url = "javascript:void(0)"
+  qr  = "/images/qr/bilibili.png"
+  weight = 5
+  [[params.social]]
+  id = "shipinhao"
+  url = "javascript:void(0)"
+  qr  = "/images/qr/shipinghao.png"
+  weight = 6
+  [[params.social]]
+  id = "x"
+  url = "javascript:void(0)"
+  weight = 7
+  [[params.social]]
+  id = "email"
+  url = "mailto:business@sinxbot.com"
+  weight = 8
+  [[params.social]]
+  id = "phone"
+  url = "tel:+86-13429850318"
+  weight = 9

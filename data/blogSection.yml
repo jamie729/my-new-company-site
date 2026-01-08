@@ -1,0 +1,7 @@
+---
+enable: true
+title: "新闻中心"
+subtitle: >
+          这里发布公司最新的动态、行业资讯和深度文章。
+buttonTarget: news
+---

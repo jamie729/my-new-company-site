@@ -1,0 +1,12 @@
+---
+title : "智能产品"  # 1. 修改主标题
+enable: true        # 2. 保持为 true，表示启用此区块
+subtitle: >
+        我们是专注于人工智能与机器人技术的创新公司，致力于研发前沿的智能产品解决方案。以下展示我们的核心产品系列。
+description: 我们的智能产品展示 # 4. 可修改图片区域的描述（可能是alt文本或相册标题）
+galleryImage: 
+ - image: "images/gallery/product_01.png"  # 5. 替换为你的产品图1
+ - image: "images/gallery/product_02.png"
+ - image: "images/gallery/product_03.png"
+ - image: "images/gallery/product_04.png"
+---

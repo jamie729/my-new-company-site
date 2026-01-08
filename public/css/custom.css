@@ -1,0 +1,241 @@
+/* 为画廊的滚动区域定制滚动条 */
+.gallery .row.overflow-auto {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Firefox */
+}
+.gallery .row.overflow-auto::-webkit-scrollbar {
+    height: 8px; /* 滚动条高度 */
+}
+.gallery .row.overflow-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+.gallery .row.overflow-auto::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.gallery .row.overflow-auto::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Hero inline video: center and responsive up to 1024x768 (4:3) */
+#heroVideoInline { text-align: center; padding: 8px 12px; }
+#heroVideoInline video { 
+    width: 100%;
+    max-width: 1024px;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Ensure Magnific Popup inline content is centered */
+.mfp-inline-holder .mfp-content { display: flex; align-items: center; justify-content: center; }
+
+@media (max-width: 768px) {
+    #heroVideoInline video { max-width: 100%; aspect-ratio: 16/9; }
+}
+
+/* Ensure Magnific Popup inline content is centered and visible */
+.mfp-wrap, .mfp-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.mfp-content {
+    width: 90% !important;
+    max-width: 1024px !important;
+    box-sizing: border-box !important;
+}
+.mfp-inline-holder .mfp-content video {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh !important;
+    display: block !important;
+}
+/* QR code popup: constrain image to middle area */
+.mfp-qr img.mfp-img {
+    max-width: 260px !important;
+    max-height: 60vh !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+
+/* 新闻列表：统一图片高度，保持响应性并避免文字覆盖 */
+
+/* Make inline images inside post content match featureImage styling */
+img.post-image,
+.post-body img,
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* If images are floated or larger than container, ensure they don't overflow */
+.post-body img { box-sizing: border-box; }
+
+/* Stronger rule for processed/page-bundle images: force fit and rounded corners */
+img.post-image,
+.post-body img.post-image,
+.post-image img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    border-radius: 6px !important;
+    display: block !important;
+    margin: 0 auto 20px !important;
+    overflow: hidden !important;
+}
+
+/* News list: force blog cards to have consistent image height and equal card heights */
+.news .row { align-items: stretch; }
+.news .col-lg-4, .news .col-md-6, .news .col-12 { display: flex; }
+.news .col-lg-4 > .blog-post, .news .col-md-6 > .blog-post { display: flex; flex-direction: column; width:100%; }
+.news .blog-post img { width:100% !important; height: 220px; object-fit: cover; border-radius:5px 5px 0 0 !important; }
+.news .blog-content { flex: 1 1 auto; display: flex; flex-direction: column; }
+.news .blog-content p { flex: 1 1 auto; }
+.news .blog-content .more { margin-top: 12px; }
+
+@media (max-width: 992px) {
+    .news .blog-post img { height: 200px; }
+}
+@media (max-width: 575px) {
+    .news .blog-post img { height: 160px; }
+}
+
+/* Footer social icon color and SVG sizing */
+.footer-icon a { color: #6c757d; transition: color .18s ease; }
+.footer-icon a:hover, .footer-icon a:focus { color: #00a6ff; }
+.footer-icon a i { color: inherit; }
+.footer-icon a svg.social-icon { fill: currentColor; width: 20px; height: 20px; display:inline-block; vertical-align: middle; }
+.footer-icon a img.social-icon { width: 20px; height: 20px; display: inline-block; vertical-align: middle; }
+.footer-icon a:focus { box-shadow: 0 0 0 3px rgba(0, 166, 255, 0.18); border-radius: 4px; }
+
+/* Ensure contact map and contact info are equal height and side-by-side on desktop */
+.contact .row.no-gutters { display:flex; align-items:stretch; }
+.contact .col-lg-6 { display:flex; flex-direction:column; }
+/* Make the map column stretch to match the contact info height */
+.contact .col-lg-6:first-child { display:flex; align-items:stretch; }
+.contact #map { flex:1 1 auto; min-height:420px; height:100% !important; box-sizing:border-box; }
+.contact #map iframe { width:100% !important; height:100% !important; border:0; display:block; }
+.contact .contact-aria { display:flex; flex-direction:column; justify-content:center; }
+.contact .contact-aria .contact-icon { display:inline-flex; align-items:center; margin-right:8px; }
+.contact .contact-aria .contact-icon svg.social-icon { width:20px; height:20px; fill: currentColor; }
+
+/* Responsive fallback: stacked columns on smaller screens */
+@media (max-width: 991px) {
+    .contact .row.no-gutters { display:block; }
+    .contact #map { height:500px; min-height:0; }
+    .contact #map iframe { height:100%; }
+}
+
+/* Hero section: ensure full viewport height coverage */
+section.hero {
+  min-height: 100vh !important;
+  height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: 34% auto !important;
+  padding: 0 !important;
+}
+
+/* Override theme's ::after pseudo-element */
+section.hero::after {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Ensure hero section maintains full height on all screen sizes */
+@media (max-width: 991px) {
+  section.hero {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  section.hero {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  section.hero {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    padding: 0 !important;
+  }
+}
+
+/* Load Themify font for hero video player icon */
+@font-face {
+    font-family: 'themify';
+    src: url('/fonts/themify.eot?-fvbane') format('embedded-opentype'),
+         url('/fonts/themify.woff?-fvbane') format('woff'),
+         url('/fonts/themify.ttf?-fvbane') format('truetype'),
+         url('/fonts/themify.svg?#themify') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Footer logo: make it smaller and keep it responsive */
+.footer-logo img {
+    max-height: 60px;   /* 调整这个数值可以控制 logo 高度 */
+    width: auto;
+    height: auto;
+}
+
+/* Hero video player icon fix - ensure Themify icon displays correctly */
+.hero-video-player-icon a {
+    display: block;
+    position: relative;
+    background: #ffffff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #000000;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-video-player-icon a:hover {
+    transform: scale(1.2);
+    color: #00a6ff;
+}
+
+.hero-video-player-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fix page scroll position on refresh - ensure page starts at top */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent browser from restoring scroll position on refresh */
+html {
+    scroll-padding-top: 0;
+    scroll-snap-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}

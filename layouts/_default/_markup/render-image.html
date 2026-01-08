@@ -1,0 +1,23 @@
+{{/*
+  render-image hook
+  - If image link is a page resource (relative path and present in page bundle), use Hugo image processing to create resized versions and output responsive srcset.
+  - If image link is absolute (starts with /) or resource not found, fall back to outputting the original destination.
+  - Always add `post-image` class so CSS from `static/css/custom.css` applies.
+*/}}
+{{ $src := .Destination }}
+{{ $alt := .Text | safeHTMLAttr }}
+{{ $title := .Title | safeHTMLAttr }}
+{{ $class := "post-image" }}
+
+{{ if strings.HasPrefix $src "/" }}
+  <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $title }}" class="{{ $class }}" loading="lazy" />
+{{ else }}
+  {{ $res := .Page.Resources.GetMatch (printf "**%s" $src) }}
+  {{ if $res }}
+    {{ $small := $res.Resize "600x" }}
+    {{ $large := $res.Resize "1024x" }}
+    <img src="{{ $large.RelPermalink }}" srcset="{{ $small.RelPermalink }} 600w, {{ $large.RelPermalink }} 1024w" sizes="(max-width:1024px) 100vw, 1024px" alt="{{ $alt }}" title="{{ $title }}" class="{{ $class }}" loading="lazy" />
+  {{ else }}
+    <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $title }}" class="{{ $class }}" loading="lazy" />
+  {{ end }}
+{{ end }}

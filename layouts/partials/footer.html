@@ -1,0 +1,106 @@
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="footer-logo">
+          <img class="img-fluid" src="{{ .Site.Params.footerlogo | absURL}}" alt="logo">
+        </div>
+        <p class="footer-description">
+          {{ .Site.Params.footerDescription}}
+        </p>
+        <div class="footer-text-block">
+          <p>
+            {{ .Site.Params.address.address | safeHTML}}
+          </p>
+        </div>
+      </div>
+      {{ $socialIcon := .Site.Params.social}}
+      <div class="col-lg-6 col-md-12 align-self-end">
+        <div class="footer-icon">
+          <ul>
+            {{ range sort $socialIcon "weight" "asc" }}
+            <li>
+              <a href="{{ .url }}" aria-label="{{ .id }}" class="social-qr" data-qr="{{ .qr }}">
+                {{- if .id -}}
+                  {{- partial (printf "icons/%s.html" .id) . -}}
+                {{- else -}}
+                  {{ with .icon }}<i class="{{ . }}"></i>{{ else }}<i class="ti-sharethis"></i>{{ end }}
+                {{- end -}}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="footer-copyright-text">
+          <p> {{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }} </p>
+          <ul>
+            {{ $sitemap := .Site.Menus.sitemap }}
+						{{ range $sitemap }}
+						  <li>
+                <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ "<!-- Non Critical CSS -->" | safeHTML }}
+{{$style :=  resources.Get "scss/non-critical.scss" | resources.ToCSS | resources.Minify }}
+<link href="{{ $style.Permalink }}" rel="stylesheet" />
+<link href="{{ "/css/custom.css" | absURL }}" rel="stylesheet" />
+
+{{/* Baidu Maps: if an API key is provided, load the JS API and initialize an interactive map; otherwise use a simple iframe fallback pointing to Baidu's marker HTML. */}}
+{{ if .Site.Params.Map.baiduAK }}
+<script src="https://api.map.baidu.com/api?v=3.0&ak={{ .Site.Params.Map.baiduAK }}"></script>
+<script>
+  (function(){
+    function initBaidu() {
+      try {
+        var lat = parseFloat("{{ .Site.Params.map.latitude }}");
+        var lng = parseFloat("{{ .Site.Params.map.longitude }}");
+        var label = "{{ .Site.Params.map.mapLabel }}" || "弦引未来科技有限公司";
+        var map = new BMap.Map("map", {enableMapClick:false});
+        var point = new BMap.Point(lng, lat);
+        map.centerAndZoom(point, 16);
+        // enable scroll wheel zoom for usability
+        try { map.enableScrollWheelZoom(true); } catch(e){}
+        // custom marker icon if provided
+        var pin = "{{ .Site.Params.map.pinImage | absURL }}";
+        var marker;
+        if (pin && pin !== "") {
+          var icon = new BMap.Icon(pin, new BMap.Size(40,40), {anchor: new BMap.Size(20,40)});
+          marker = new BMap.Marker(point, {icon: icon});
+        } else {
+          marker = new BMap.Marker(point);
+        }
+        map.addOverlay(marker);
+        var opts = {width:220, title: label};
+        var info = new BMap.InfoWindow(label, opts);
+        marker.addEventListener('click', function(){ this.openInfoWindow(info); });
+        // Don't open info window on page load to prevent auto-scroll
+        // marker.openInfoWindow(info);
+        // Don't pan to point on page load to prevent auto-scroll
+        // setTimeout(function(){ try{ map.panTo(point); } catch(e){} }, 200);
+      } catch(e){ if (window.console) console.error(e); }
+    }
+    if (window.BMap && typeof BMap.Map === 'function') { initBaidu(); }
+    else { window.addEventListener('load', initBaidu); }
+  })();
+</script>
+{{ else }}{{ end }}
+
+{{ "<!-- VENDOR JS -->" | safeHTML }}
+<script src="{{"vendor/jQuery/jquery.min.js" | absURL }}"></script>
+<script src="{{"vendor/bootstrap/bootstrap.min.js" | absURL }}"></script>
+<script src="{{"vendor/slick/slick.min.js" | absURL}}"></script>
+<script src="{{"vendor/aos/aos.js" | absURL}}"></script>
+<script src="{{"vendor/match-height/match-height.js" | absURL}}"></script>
+<script src="{{"vendor/magnific-popup/magnific-popup.min.js" | absURL}}"></script>
+<!-- {{ $formhandler := resources.Get "js/formhandler.js" | minify}} 
+<script src="{{ $formhandler.Permalink}}"></script> -->
+{{ $script := resources.Get "js/script.js" | minify}} 
+<script src="{{ $script.Permalink}}"></script>
