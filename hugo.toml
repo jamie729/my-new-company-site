@@ -1,4 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = '/'
+relativeURLs = true
+canonifyURLs = false
 languageCode = 'en-us'
 title = '弦引未来'
 theme = 'coHub'
