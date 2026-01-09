@@ -1,6 +1,6 @@
 baseURL = "https://jamie729.github.io/my-new-company-site/"
-relativeURLs = true
-canonifyURLs = false
+relativeURLs = false
+canonifyURLs = true
 languageCode = 'en-us'
 title = '弦引未来'
 theme = 'coHub'
