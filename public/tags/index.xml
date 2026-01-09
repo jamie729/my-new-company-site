@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 弦引未来</title>
-    <link>//localhost:1313/tags/</link>
+    <link>http://localhost:1313/my-new-company-site/tags/</link>
     <description>Recent content in Tags on 弦引未来</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2025 11:18:56 +0600</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/my-new-company-site/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>News</title>
-      <link>//localhost:1313/tags/news/</link>
+      <link>http://localhost:1313/my-new-company-site/tags/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/news/</guid>
+      <guid>http://localhost:1313/my-new-company-site/tags/news/</guid>
       <description></description>
     </item>
     <item>
       <title>Marketing</title>
-      <link>//localhost:1313/tags/marketing/</link>
+      <link>http://localhost:1313/my-new-company-site/tags/marketing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/marketing/</guid>
+      <guid>http://localhost:1313/my-new-company-site/tags/marketing/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Design</title>
-      <link>//localhost:1313/tags/web-design/</link>
+      <link>http://localhost:1313/my-new-company-site/tags/web-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/web-design/</guid>
+      <guid>http://localhost:1313/my-new-company-site/tags/web-design/</guid>
       <description></description>
     </item>
   </channel>

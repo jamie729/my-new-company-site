@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = "https://jamie729.github.io/my-new-company-site/"
 relativeURLs = true
 canonifyURLs = false
 languageCode = 'en-us'

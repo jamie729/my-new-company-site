@@ -2,78 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/aboout/</loc>
+    <loc>http://localhost:1313/my-new-company-site/aboout/</loc>
     <lastmod>2025-12-26T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>http://localhost:1313/my-new-company-site/</loc>
     <lastmod>2025-12-26T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>http://localhost:1313/my-new-company-site/about/</loc>
     <lastmod>2025-12-26T10:41:03+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/news/</loc>
+    <loc>http://localhost:1313/my-new-company-site/tags/news/</loc>
     <lastmod>2025-12-12T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/my-new-company-site/tags/</loc>
     <lastmod>2025-12-12T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/newplace/</loc>
+    <loc>http://localhost:1313/my-new-company-site/news/newplace/</loc>
     <lastmod>2025-12-12T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/</loc>
+    <loc>http://localhost:1313/my-new-company-site/news/</loc>
     <lastmod>2025-12-12T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/terms/</loc>
+    <loc>http://localhost:1313/my-new-company-site/terms/</loc>
     <lastmod>2022-01-08T12:52:02+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/products/</loc>
+    <loc>http://localhost:1313/my-new-company-site/products/</loc>
     <lastmod>2022-01-08T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/privacy/</loc>
+    <loc>http://localhost:1313/my-new-company-site/privacy/</loc>
     <lastmod>2022-01-08T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/contact/</loc>
+    <loc>http://localhost:1313/my-new-company-site/contact/</loc>
     <lastmod>2022-01-08T11:25:11+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/marketing/</loc>
+    <loc>http://localhost:1313/my-new-company-site/tags/marketing/</loc>
     <lastmod>2022-01-06T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/world-most-famous-app-developers/</loc>
+    <loc>http://localhost:1313/my-new-company-site/news/world-most-famous-app-developers/</loc>
     <lastmod>2022-01-06T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/world-most-famous-app-developers/</loc>
+    <loc>http://localhost:1313/my-new-company-site/blog/world-most-famous-app-developers/</loc>
     <lastmod>2022-01-06T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/</loc>
+    <loc>http://localhost:1313/my-new-company-site/blog/</loc>
     <lastmod>2022-01-06T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/the-similarities-between-famous-writers/</loc>
+    <loc>http://localhost:1313/my-new-company-site/news/the-similarities-between-famous-writers/</loc>
     <lastmod>2022-01-06T11:18:32+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/the-similarities-between-famous-writers/</loc>
+    <loc>http://localhost:1313/my-new-company-site/blog/the-similarities-between-famous-writers/</loc>
     <lastmod>2022-01-06T11:18:32+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/web-design/</loc>
+    <loc>http://localhost:1313/my-new-company-site/tags/web-design/</loc>
     <lastmod>2022-01-06T11:18:32+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/the-difference-between-meeting-and-connecting/</loc>
+    <loc>http://localhost:1313/my-new-company-site/news/the-difference-between-meeting-and-connecting/</loc>
     <lastmod>2022-01-06T11:17:17+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/the-difference-between-meeting-and-connecting/</loc>
+    <loc>http://localhost:1313/my-new-company-site/blog/the-difference-between-meeting-and-connecting/</loc>
     <lastmod>2022-01-06T11:17:17+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/a-cancer-survivor-built-a-wellness-platform/</loc>
+    <loc>http://localhost:1313/my-new-company-site/news/a-cancer-survivor-built-a-wellness-platform/</loc>
     <lastmod>2022-01-06T11:16:38+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/a-cancer-survivor-built-a-wellness-platform/</loc>
+    <loc>http://localhost:1313/my-new-company-site/blog/a-cancer-survivor-built-a-wellness-platform/</loc>
     <lastmod>2022-01-06T11:16:38+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/how-four-tech-companes-use-property/</loc>
+    <loc>http://localhost:1313/my-new-company-site/news/how-four-tech-companes-use-property/</loc>
     <lastmod>2022-01-06T11:15:47+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/blog/how-four-tech-companes-use-property/</loc>
+    <loc>http://localhost:1313/my-new-company-site/blog/how-four-tech-companes-use-property/</loc>
     <lastmod>2022-01-06T11:15:47+06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/my-new-company-site/categories/</loc>
   </url>
 </urlset>
