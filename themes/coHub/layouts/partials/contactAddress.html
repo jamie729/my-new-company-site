@@ -1,0 +1,38 @@
+{{ $address := .Site.Params.address}}
+<section class="contact" id="contact">
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-lg-6">
+        {{ $map := .Site.Params.map }}
+        {{ if $map.baiduAK }}
+          <div id="map" data-lat={{ $map.latitude }} data-long={{ $map.longitude }} data-pin={{ $map.pinImage | absURL }}></div>
+        {{ else }}
+          <div id="map" style="width:100%;">
+            <iframe src="https://api.map.baidu.com/marker?location={{ $map.latitude }},{{ $map.longitude }}&title={{ urlquery $map.mapLabel }}&content={{ urlquery $map.mapLabel }}&output=html" style="width:100%;height:100%;border:0;" aria-label="map"></iframe>
+          </div>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-aria">
+          <h3>
+            {{ $address.address | safeHTML }}
+          </h3>
+          <ul>
+            {{ with $address.email }}<li>
+              <span class="contact-icon">{{ partial "icons/email.html" . }}</span>
+              <a href="mailto:{{ . }}">{{ . }}</a>
+            </li>{{ end }}
+            {{ with $address.phone }}<li>
+              <span class="contact-icon">{{ partial "icons/phone.html" . }}</span>
+              <a href="tel:{{ . }}">{{ . }}</a>
+            </li>{{ end }}
+          </ul>
+          <p>
+            {{ $address.openingDesc }}
+          </p>
+          <p>{{ $address.openingHours }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

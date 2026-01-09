@@ -1,0 +1,97 @@
+{{with .Site.Data.hero}}
+{{if .enable}}
+  <section class="hero" style="background-image: url( {{ .heroBGimg }} );">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="hero-content">
+            <h1>{{.title | safeHTML}}</h1>
+            <p>
+              {{.subtitle}}
+            </p>
+            {{ if .heroVideo }}
+            <div class="hero-video-player">
+              <div class="hero-video-player-icon">
+                {{ if .heroVideoLocal }}
+                  <a class="popup-inline" href="#heroVideoInline">
+                      <i class="ti-control-play"></i>
+                  </a>
+                {{ else }}
+                  <a class="popup-vimeo" href="{{ .heroVideo }}">
+                      <i class="ti-control-play"></i>
+                  </a>
+                {{ end }}
+              </div>
+              {{ .herosVideoDesc | safeHTML }}
+            </div>
+
+            {{ if .heroVideoLocal }}
+              <div id="heroVideoInline" class="mfp-hide" style="display:none;">
+                <video id="hero-inline-video" controls preload="metadata" autoplay muted playsinline src="{{ .heroVideo | absURL }}">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <style>
+                /* Inline hero video fallback styles (ensure centered and responsive)
+                   and force-show when inside Magnific Popup to avoid display:none collisions */
+                #heroVideoInline{display:none}
+                .mfp-wrap .mfp-content #heroVideoInline{display:block !important; width:100%; max-width:1024px; margin:0 auto;}
+                .mfp-wrap .mfp-content #heroVideoInline video{width:100%; height:auto; max-height:80vh; border-radius:6px; box-shadow:0 12px 30px rgba(0,0,0,0.25); display:block}
+                .mfp-inline-holder .mfp-content{display:flex;align-items:center;justify-content:center;padding:16px}
+                @media(max-width:768px){
+                  .mfp-wrap .mfp-content #heroVideoInline video{aspect-ratio:16/9}
+                }
+              </style>
+
+              <script>
+                (function(){
+                  if(typeof jQuery === 'undefined') return;
+                  jQuery(function($){
+                    // keep the source container hidden in-page; Magnific Popup will clone it
+                    $('#heroVideoInline').hide();
+
+                    // init inline popup in case bundled script wasn't rebuilt
+                    $('.popup-inline').magnificPopup({
+                      type: 'inline',
+                      mainClass: 'mfp-fade',
+                      removalDelay: 160,
+                      preloader: false,
+                      fixedContentPos: false,
+                      callbacks: {
+                        open: function() {
+                          // Ensure the inline content inside the popup is visible (override any inline style)
+                          try {
+                            var $content = this.content && this.content.length ? this.content : $('.mfp-content');
+                            var $el = $content.find('#heroVideoInline');
+                            if ($el && $el.length) {
+                              try { $el.removeAttr('style'); } catch(e){}
+                              try { $el.css('display','block'); } catch(e){}
+                              // force reflow / repaint so browsers render the cloned node immediately
+                              try { $el[0].getBoundingClientRect(); } catch(e){}
+                              try { if (typeof $.magnificPopup !== 'undefined' && $.magnificPopup.instance && $.magnificPopup.instance.updateSize) { $.magnificPopup.instance.updateSize(); } } catch(e){}
+                            }
+                          } catch(e){}
+                          var v = document.getElementById('hero-inline-video');
+                          if (v) { try { v.currentTime = 0; v.play(); } catch(e) {} }
+                        },
+                        close: function() {
+                          // hide source container again and pause/reset video
+                          try { $('#heroVideoInline').hide(); } catch(e){}
+                          var v = document.getElementById('hero-inline-video');
+                          if (v) { try { v.pause(); v.currentTime = 0; } catch(e) {} }
+                        }
+                      }
+                    });
+                  });
+                })();
+              </script>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{end}}
+{{end}}
