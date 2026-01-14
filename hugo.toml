@@ -1,6 +1,6 @@
-baseURL = "https://jamie729.github.io/my-new-company-site/"
-relativeURLs = false
-canonifyURLs = true
+baseURL = '/'
+relativeURLs = true
+canonifyURLs = false
 languageCode = 'en-us'
 title = '弦引未来'
 theme = 'coHub'
@@ -28,7 +28,7 @@ theme = 'coHub'
   # weight = 5
   [[menu.Main]]
   name = "招贤纳士"
-  url= "#faq"
+  url= "/recruit/"
   weight = 6
   [[menu.Main]]
   name = "联系我们"
@@ -49,7 +49,7 @@ theme = 'coHub'
 [params]
   # theme_overrides = "css/overrides.css"
   aboutPageURL = "news"
-  contactLink = "contact"
+  contactLink = "/contact/"
   copyright = "© {year} <a href=\"https://staticmania.com/\" target=\"_blank\">StaticMania </a>"
   fabFormURL =  "https://fabform.io/f/u00kv3-"
   googleAnalytics = "G-JZ95FEWF9K"

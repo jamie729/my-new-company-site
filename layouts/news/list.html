@@ -6,7 +6,7 @@
         <h1>{{.Title}}</h1>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">首页</a></li>
             <li class="breadcrumb-item active">{{.Title}}</li>
           </ol>
         </nav>
@@ -21,7 +21,13 @@
       {{ range .Paginator.Pages }}
       <div class="col-lg-4 mb-4">
         <article class="blog-post">
-          <img src="{{ .Params.featureImage | absURL }}" alt="news-images">
+          {{ $featureImage := .Params.featureImage }}
+          {{ $res := .Resources.GetMatch $featureImage }}
+          {{ if $res }}
+            <img src="{{ $res.RelPermalink }}" alt="news-images">
+          {{ else }}
+            <img src="{{ $featureImage | absURL }}" alt="news-images">
+          {{ end }}
           <div class="blog-content">
             <h3><a href="{{ .Permalink }}">{{ .Title}}</a></h3>
             <p> {{truncate 100 .Summary}} </p>
