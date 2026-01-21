@@ -16,37 +16,47 @@
       </div>
       {{ $socialIcon := .Site.Params.social}}
       <div class="col-lg-6 col-md-12 align-self-end">
-        <div class="footer-icon">
-          <ul>
-            {{ range sort $socialIcon "weight" "asc" }}
-            <li>
-              <a href="{{ .url }}" aria-label="{{ .id }}" class="social-qr" data-qr="{{ .qr }}">
-                {{- if .id -}}
-                  {{- partial (printf "icons/%s.html" .id) . -}}
-                {{- else -}}
-                  {{ with .icon }}<i class="{{ . }}"></i>{{ else }}<i class="ti-sharethis"></i>{{ end }}
-                {{- end -}}
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="footer-copyright-text">
-          <p> {{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }} </p>
-          <ul>
-            {{ $sitemap := .Site.Menus.sitemap }}
-						{{ range $sitemap }}
-						  <li>
-                <a href="{{ .URL | absURL }}">{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
       </div>
     </div>
   </div>
+    <div class="f_center">
+        <div class="leftx"></div>
+        <div class="rightx">
+            <div class="footer-icon">
+              <ul>
+                {{ range sort $socialIcon "weight" "asc" }}
+                <li>
+                  <a href="{{ .url }}" aria-label="{{ .id }}" class="social-qr" data-qr="{{ .qr }}">
+                    {{- if .id -}}
+                      {{- partial (printf "icons/%s.html" .id) . -}}
+                    {{- else -}}
+                      {{ with .icon }}<i class="{{ . }}"></i>{{ else }}<i class="ti-sharethis"></i>{{ end }}
+                    {{- end -}}
+                    {{- with .qr -}}
+                      <span class="qr-code" style="background-image: url('{{ . | absURL }}');"></span>
+                    {{- end -}}
+                  </a>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div class="f_bottom">
+        <div class="leftxx"></div>
+        <div class="rightxx">
+            <p> {{ replace .Site.Params.copyright "{year}" now.Year | safeHTML }} </p>
+            <ul>
+                {{ $sitemap := .Site.Menus.sitemap }}
+                {{ range $sitemap }}
+                  <li>
+                    <a href="{{ .URL | absURL }}" target="_blank">{{ .Name }}</a>
+                  </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
 </section>
-
 
 {{ "<!-- Non Critical CSS -->" | safeHTML }}
 {{$style :=  resources.Get "scss/non-critical.scss" | resources.ToCSS | resources.Minify }}
