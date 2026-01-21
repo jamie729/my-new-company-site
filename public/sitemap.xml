@@ -2,78 +2,99 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/my-new-company-site/aboout/</loc>
+    <loc>//localhost:1313/aboout/</loc>
     <lastmod>2025-12-26T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-12-26T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2025-12-26T10:41:03+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/tags/news/</loc>
+    <loc>//localhost:1313/tags/ai/</loc>
+    <lastmod>2025-12-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-12-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/</loc>
+    <lastmod>2025-12-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/recruit/algorithm-engineer/</loc>
+    <lastmod>2025-12-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2025-12-26T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/news/</loc>
     <lastmod>2025-12-12T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/tags/</loc>
+    <loc>//localhost:1313/news/newplace/</loc>
     <lastmod>2025-12-12T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/news/newplace/</loc>
+    <loc>//localhost:1313/news/</loc>
     <lastmod>2025-12-12T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/news/</loc>
-    <lastmod>2025-12-12T11:18:56+06:00</lastmod>
+    <loc>//localhost:1313/news/20251015/</loc>
+    <lastmod>2025-10-15T22:17:56+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/terms/</loc>
+    <loc>//localhost:1313/news/20250930/</loc>
+    <lastmod>2025-09-30T10:18:56+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/news/2025wmc/</loc>
+    <lastmod>2025-09-23T11:18:56+06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
+    <lastmod>2025-01-13T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/recruit/</loc>
+    <lastmod>2025-01-13T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <lastmod>2025-01-13T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/recruit/software-engineer/</loc>
+    <lastmod>2025-01-13T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/contact/</loc>
+    <lastmod>2025-01-13T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2025-01-13T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/terms/</loc>
     <lastmod>2022-01-08T12:52:02+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/products/</loc>
+    <loc>//localhost:1313/products/</loc>
     <lastmod>2022-01-08T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/privacy/</loc>
+    <loc>//localhost:1313/privacy/</loc>
     <lastmod>2022-01-08T12:51:52+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/contact/</loc>
-    <lastmod>2022-01-08T11:25:11+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-new-company-site/tags/marketing/</loc>
+    <loc>//localhost:1313/tags/marketing/</loc>
     <lastmod>2022-01-06T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/news/world-most-famous-app-developers/</loc>
+    <loc>//localhost:1313/blog/world-most-famous-app-developers/</loc>
     <lastmod>2022-01-06T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/blog/world-most-famous-app-developers/</loc>
+    <loc>//localhost:1313/blog/</loc>
     <lastmod>2022-01-06T11:18:56+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/blog/</loc>
-    <lastmod>2022-01-06T11:18:56+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-new-company-site/news/the-similarities-between-famous-writers/</loc>
+    <loc>//localhost:1313/blog/the-similarities-between-famous-writers/</loc>
     <lastmod>2022-01-06T11:18:32+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/blog/the-similarities-between-famous-writers/</loc>
+    <loc>//localhost:1313/tags/web-design/</loc>
     <lastmod>2022-01-06T11:18:32+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/tags/web-design/</loc>
-    <lastmod>2022-01-06T11:18:32+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-new-company-site/news/the-difference-between-meeting-and-connecting/</loc>
+    <loc>//localhost:1313/blog/the-difference-between-meeting-and-connecting/</loc>
     <lastmod>2022-01-06T11:17:17+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/blog/the-difference-between-meeting-and-connecting/</loc>
-    <lastmod>2022-01-06T11:17:17+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-new-company-site/news/a-cancer-survivor-built-a-wellness-platform/</loc>
+    <loc>//localhost:1313/blog/a-cancer-survivor-built-a-wellness-platform/</loc>
     <lastmod>2022-01-06T11:16:38+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/blog/a-cancer-survivor-built-a-wellness-platform/</loc>
-    <lastmod>2022-01-06T11:16:38+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-new-company-site/news/how-four-tech-companes-use-property/</loc>
+    <loc>//localhost:1313/blog/how-four-tech-companes-use-property/</loc>
     <lastmod>2022-01-06T11:15:47+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-new-company-site/blog/how-four-tech-companes-use-property/</loc>
-    <lastmod>2022-01-06T11:15:47+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/my-new-company-site/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url>
 </urlset>

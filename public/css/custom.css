@@ -104,6 +104,16 @@ img.post-image,
 .news .blog-content p { flex: 1 1 auto; }
 .news .blog-content .more { margin-top: 12px; }
 
+/* Recruit list: add top border to blog-post when no image is present */
+.news .blog-post.no-image {
+  border: 1px solid #ececec !important;
+  border-radius: 5px !important;
+}
+.news .blog-post.no-image .blog-content {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
 @media (max-width: 992px) {
     .news .blog-post img { height: 200px; }
 }
@@ -238,4 +248,70 @@ html {
 body {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+/* Post video styling: match image styling for consistency */
+.post-body video.post-video,
+.post-body .post-video {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    border-radius: 6px !important;
+    display: block !important;
+    margin: 0 auto 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive video sizing */
+@media (max-width: 992px) {
+    .post-body video.post-video,
+    .post-body .post-video {
+        margin: 0 auto 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-body video.post-video,
+    .post-body .post-video {
+        margin: 0 auto 10px !important;
+        border-radius: 4px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .post-body video.post-video,
+    .post-body .post-video {
+        margin: 0 auto 8px !important;
+        border-radius: 3px !important;
+    }
+}
+
+/* About page: subTitle 首行缩进两个字符，靠左对齐 */
+.about-subtitle {
+    text-align: left;
+    text-indent: 2em;
+}
+
+/* Footer fix: Ensure footer stays at bottom of page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    flex: 1 0 auto;
+}
+
+section.footer {
+    flex-shrink: 0;
+    width: 100%;
 }

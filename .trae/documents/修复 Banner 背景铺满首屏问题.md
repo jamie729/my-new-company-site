@@ -8,9 +8,14 @@
 
 **具体修改：**
 文件：`d:\my-new-company-site\static\css\custom.css`
-- 第 149 行：将 `background-size: 34% auto !important;` 改为 `background-size: cover !important;`
+
+* 第 149 行：将 `background-size: 34% auto !important;` 改为 `background-size: cover !important;`
 
 **预期效果：**
-- 灰色背景将 100% 覆盖浏览器可视区域的第一屏
-- 保持背景图片的宽高比，不会变形
-- 在不同屏幕尺寸和分辨率下都能保持背景铺满效果
+
+* 灰色背景将 100% 覆盖浏览器可视区域的第一屏
+
+* 保持背景图片的宽高比，不会变形
+
+* 在不同屏幕尺寸和分辨率下都能保持背景铺满效果
+

@@ -2,53 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>新闻中心 on 弦引未来</title>
-    <link>http://localhost:1313/my-new-company-site/news/</link>
+    <link>//localhost:1313/news/</link>
     <description>Recent content in 新闻中心 on 弦引未来</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Dec 2025 11:18:56 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/my-new-company-site/news/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新址新篇章！【弦引未来】乔迁大吉，破浪乘风，弦起新章！</title>
-      <link>http://localhost:1313/my-new-company-site/news/newplace/</link>
+      <link>//localhost:1313/news/newplace/</link>
       <pubDate>Fri, 12 Dec 2025 11:18:56 +0600</pubDate>
-      <guid>http://localhost:1313/my-new-company-site/news/newplace/</guid>
+      <guid>//localhost:1313/news/newplace/</guid>
       <description>2025年12月12日上午，安徽弦引未来科技有限公司乔迁庆典在合肥市高新区中安创谷二期H3-2楼隆重举行，本次典礼邀请到了公司各方股东、投资人及重要合作伙伴与行业嘉宾共同见证了公司的里程碑时刻，共话“绳驱机器人+具身智能”的新篇章。&#xA;此次乔迁不仅是办公环境焕然新生，更是公司立足于合肥的新起点，同时标志着弦引未来将迈入一个新的征程，更彰显了科技创新，敢于突破，拓展未来的坚定决心。&#xA;【嘉宾代表致辞】 乔迁致辞环节，江淮中心综合管理部部长王国忱，表示将持续赋能，为企业链接更多场景与资源。&#xA;陶彦博博士代表弦引未来首席科学家、清华大学梁斌教授发表讲话，回顾弦引未来从实验室到产业化的跃迁历程，寄语团队“让绳驱技术走向更广阔的天地”。&#xA;弦引未来联合创始人兼执行总裁马璁发表了乔迁致辞，回顾了当前弦引未来的发展历程及公司的发展愿景，并向长期支持公司的伙伴与合作商致谢。&#xA;【弦聚此刻】 在热烈掌声中，弦引未来联合创始人兼执行董事田蓥梅执刀切下乔迁蛋糕，与嘉宾共享甜蜜，一同拉开弦引未来的崭新篇章。&#xA;镜头定格，此次乔迁仪式到场嘉宾与弦引未来全体员工在“弦引未来”前并肩合影，为今日的乔迁喜悦留存永恒记忆。&#xA;新征程已起航，弦引未来将继续深耕柔性绳驱机器人赛道，与各方携手，把“绳驱机器人+具身智能”拉进更广阔的未来。&#xA;【新址介绍】 弦引未来坐落于安徽省合肥市蜀山高新区中安创谷二期H3栋，中安创谷是由安徽省投资集团和合肥高新区联合设立的安徽中安创谷科技园有限公司建设运营的科创园区，位于合肥国家高新技术产业开发区，总规划面积约260万平方米，分六期开发建设，被纳入安徽省“科大硅谷”核心区。园区重点发展新一代信息技术、人工智能、生命健康、空天信息和科技金融等战略性新兴产业，配套全球路演中心、运动中心及地铁接驳专线等设施。</description>
     </item>
     <item>
-      <title>World Most Famous App Developers</title>
-      <link>http://localhost:1313/my-new-company-site/news/world-most-famous-app-developers/</link>
-      <pubDate>Thu, 06 Jan 2022 11:18:56 +0600</pubDate>
-      <guid>http://localhost:1313/my-new-company-site/news/world-most-famous-app-developers/</guid>
-      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius eum dolor voluptatum autem minima magni soluta reiciendis corrupti, iste odio, minus odit voluptates rerum veritatis nam vel! Odio, totam?&#xA;A sample heading Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia quas maiores, error magnam distinctio doloribus fugiat ea minima incidunt odio facere nam nisi quod nobis aut quae aliquid. Atque voluptas esse voluptate. Placeat laudantium veniam, repellendus laboriosam blanditiis commodi!</description>
+      <title>央视 | 铁手能捏豆腐？这个机器人为何这么“灵”</title>
+      <link>//localhost:1313/news/20251015/</link>
+      <pubDate>Wed, 15 Oct 2025 22:17:56 +0600</pubDate>
+      <guid>//localhost:1313/news/20251015/</guid>
+      <description>转载自江淮前沿技术协同创新中心 原文链接 您的浏览器不支持视频播放。&#xD;启江视触灵巧手展现刚柔并济 近日，在央视《科晚进行时》栏目的特别报道中，江淮前沿技术协同创新中心自主研发的“启江视触灵巧手”以精细操作能力惊艳亮相，在面对极易破损的豆腐和轻若无物的羽毛时，复现了人手的“柔”与“巧”。这款灵巧手拥有20个关节，其中15个主动自由度，可以轻松处理抓取、旋转、装配等复杂操作，具有类人水平的运动灵活性。 为什么机器人需要一双灵巧手？ 答案藏在我们的人类世界中！人类的手是自然界中运动灵活性最高、感知最丰富的部位。灵巧手是人形机器人的核心执行机构，其性能决定了机器人灵活操作和处理复杂任务时的精细控制能力，解决传统机械手无法应对的难题。&#xA;启江视触灵巧手技术特性 这款灵巧手以高度模块化的拟人构型，在如同成人手掌的空间内实现了同等自由度下显著的紧凑与轻量化优势。实现精细操作的核心，在于指尖的仿生触觉感知系统。柔性表层下内置的高分辨率微型相机，能实时捕捉接触产生的微观形变，再通过智能算法精准重构出接触力与位置信息。基于此，启江视触灵巧手不仅能自适应控制抓握力度，还能识别材质、解析纹理，甚至在人手轻触的瞬间，清晰捕捉到指纹的独特走向。&#xA;既能稳妥抓握，又能细腻辨识——这使它不只是机械的执行末端，更如同一位有感知、会思考的智能伙伴。未来，有望在工厂、家庭乃至更多场景中承担精巧任务，成为开启工业、服务等广阔应用领域的“金钥匙”。</description>
     </item>
     <item>
-      <title>The Similarities Between Famous Writers</title>
-      <link>http://localhost:1313/my-new-company-site/news/the-similarities-between-famous-writers/</link>
-      <pubDate>Thu, 06 Jan 2022 11:18:32 +0600</pubDate>
-      <guid>http://localhost:1313/my-new-company-site/news/the-similarities-between-famous-writers/</guid>
-      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius eum dolor voluptatum autem minima magni soluta reiciendis corrupti, iste odio, minus odit voluptates rerum veritatis nam vel! Odio, totam?&#xA;A sample heading Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia quas maiores, error magnam distinctio doloribus fugiat ea minima incidunt odio facere nam nisi quod nobis aut quae aliquid. Atque voluptas esse voluptate. Placeat laudantium veniam, repellendus laboriosam blanditiis commodi!</description>
+      <title>柔性绳驱，舞动未来——安徽弦动未来科技有限公司完成数千万元融资</title>
+      <link>//localhost:1313/news/20250930/</link>
+      <pubDate>Tue, 30 Sep 2025 10:18:56 +0600</pubDate>
+      <guid>//localhost:1313/news/20250930/</guid>
+      <description>融资破局立标杆，绳驱先锋锚定具身智能新方向 专注于仿肌腱绳驱机器人与视触灵巧手研发的安徽弦动未来科技有限公司（下称 “弦动未来”）宣布完成首轮数千万元融资。本轮的融资资金将主要用于人才梯队的建设、研发投入及技术迭代，为公司技术落地与市场拓展注入关键动能。 弦动未来成立于2025年9月5日，是安徽省首家聚焦“绳驱机器人+具身智能”的领军企业，也是江淮前沿技术协同创新中心投资孵化的产业化公司，核心业务覆盖仿肌腱的绳驱机器人、视触灵巧手及视触传感器产品的研发、生产与产业化。&#xA;专家领衔筑根基，技术闭环建壁垒 弦动未来不仅掌握了绳驱核心技术的研发能力，更注重产学研深度融合，与多家高校和研究机构建立合作关系，持续推动技术创新和产业应用，技术团队主要来自于江淮中心、清华大学、中国科学技术大学、哈尔滨工业大学、重庆大学等知名高校和科研院所。清华大学长聘教授、江淮中心首席科学家梁斌担任公司首席科学家，哈尔滨工业大学（深圳）徐文福教授和清华大学李翔长聘副教授联合担任公司技术顾问。&#xA;梁斌教授是国内绳驱机械臂领域的权威专家，深耕绳驱领域20余年，造诣深厚，与徐文福教授合著《绳驱超冗余机器人运动学及轨迹规划》专著，系统阐述了绳驱机器人的理论和方法，多次获得各类奖项，其首创“力位型融合柔顺控制技术”解决了绳索蠕变的行业难题，实现复杂场景下的安全精准操控，成为公司全系产品的 “技术底座”。&#xA;在梁斌教授带领下，团队在柔性绳驱机器人的绳驱关节构型设计、刚柔耦合多体动力学建模、精密变刚度柔顺控制算法、系统集成优化等关键技术上取得了系列突破，获得了多项省部级、国家级奖项，实现全栈技术自研，拥有全流程自主知识产权，为技术产业化奠定了坚实基础。&#xA;打造核心产品矩阵，适配多领域应用需求 在当前机器人产业发展中，传统刚性机械臂在复杂场景下的操作局限性日益凸显——服务领域难以满足人机协作的安全性与灵活性需求，工业领域无法高效适配狭小空间、高危环境的作业场景，而绳驱技术凭借柔性传动、精准控制、安全兼容的核心优势，成为填补上述技术空白的关键方向。 弦动未来基于对行业需求的深度洞察，聚焦绳驱机器人及配套感知执行产品研制，形成覆盖服务、工业两大领域的核心产品矩阵，有效解决机器人“灵巧操作”与“场景适配” 核心难题，为多行业智能化升级提供技术支撑。&#xA;在具体产品矩阵布局上，既包含聚焦人机安全协作、规划用于家庭辅助、商业服务等场景服务性绳驱机器人，也涵盖针对工业场景痛点、狭小空间与高危环境作业的工业用绳驱蛇形柔性臂，同时布局作为机器人灵巧执行核心部件、含直驱/绳驱双版本的多自由度视触灵巧手，以及计划为执行末端提供感知数据支撑、适配多类操作场景的视触传感器部件，形成服务与工业场景互补、执行与感知功能协同的产品体系。 同时，弦动未来绳驱视触灵巧手已实现核心功能验证，并于9月29日发布功能演示视频，视频中灵巧手具备沸水捞物、丝滑注射、稳定移液等能力，宣告弦动未来已实现绳驱传动方案与视触融合感知的系统性创新。 此外，视触觉传感器已完成性能测试，相关技术指标达到行业领先水平，不日将正式发布。&#xA;乘势产业东风，开启规模化发展新篇章 弦动未来以“技术驱动，赋能产业”为核心理念，致力于将先进的柔性仿肌腱绳驱机器人技术转化为满足市场需求的可靠产品和解决方案。发展初期，弦动未来将重点研发绳驱具身智能机器人与视触灵巧手两大类产品，面向工业领域，为航空航天、半导体制造、精密仪器等行业提供超高精度、大工作范围的灵活操作平台;面向服务领域，为存在高服务需求的酒店、家庭等强交互场所提供柔顺安全的智能服务机器人。 </description>
     </item>
     <item>
-      <title>The Difference Between Meeting and Connecting</title>
-      <link>http://localhost:1313/my-new-company-site/news/the-difference-between-meeting-and-connecting/</link>
-      <pubDate>Thu, 06 Jan 2022 11:17:17 +0600</pubDate>
-      <guid>http://localhost:1313/my-new-company-site/news/the-difference-between-meeting-and-connecting/</guid>
-      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius eum dolor voluptatum autem minima magni soluta reiciendis corrupti, iste odio, minus odit voluptates rerum veritatis nam vel! Odio, totam?&#xA;A sample heading Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia quas maiores, error magnam distinctio doloribus fugiat ea minima incidunt odio facere nam nisi quod nobis aut quae aliquid. Atque voluptas esse voluptate. Placeat laudantium veniam, repellendus laboriosam blanditiis commodi!</description>
-    </item>
-    <item>
-      <title>A Cancer Survivor Built a Wellness Platform</title>
-      <link>http://localhost:1313/my-new-company-site/news/a-cancer-survivor-built-a-wellness-platform/</link>
-      <pubDate>Thu, 06 Jan 2022 11:16:38 +0600</pubDate>
-      <guid>http://localhost:1313/my-new-company-site/news/a-cancer-survivor-built-a-wellness-platform/</guid>
-      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius eum dolor voluptatum autem minima magni soluta reiciendis corrupti, iste odio, minus odit voluptates rerum veritatis nam vel! Odio, totam?&#xA;A sample heading Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia quas maiores, error magnam distinctio doloribus fugiat ea minima incidunt odio facere nam nisi quod nobis aut quae aliquid. Atque voluptas esse voluptate. Placeat laudantium veniam, repellendus laboriosam blanditiis commodi!</description>
-    </item>
-    <item>
-      <title>How Four Tech Companes Use Property</title>
-      <link>http://localhost:1313/my-new-company-site/news/how-four-tech-companes-use-property/</link>
-      <pubDate>Thu, 06 Jan 2022 11:15:47 +0600</pubDate>
-      <guid>http://localhost:1313/my-new-company-site/news/how-four-tech-companes-use-property/</guid>
-      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius eum dolor voluptatum autem minima magni soluta reiciendis corrupti, iste odio, minus odit voluptates rerum veritatis nam vel! Odio, totam?&#xA;A sample heading Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia quas maiores, error magnam distinctio doloribus fugiat ea minima incidunt odio facere nam nisi quod nobis aut quae aliquid. Atque voluptas esse voluptate. Placeat laudantium veniam, repellendus laboriosam blanditiis commodi!</description>
+      <title>江淮中心携前沿成果硬核亮相2025世界制造业大会</title>
+      <link>//localhost:1313/news/2025wmc/</link>
+      <pubDate>Tue, 23 Sep 2025 11:18:56 +0600</pubDate>
+      <guid>//localhost:1313/news/2025wmc/</guid>
+      <description>2025世界制造业大会正在合肥滨湖国际会展中心盛大进行中。本届大会由安徽省人民政府、国家制造强国建设战略咨询委员会、中国中小企业协会、全球中小企业联盟共同主办，以&amp;quot;智造世界·创造美好&amp;quot;为主题，邀请约1100名国内外重要嘉宾出席，举办开幕式、主旨演讲、重点产业链供应链供需对接、重大项目集中签约、权威发布和成果展示等活动，设立2万平方米展区，致力于加强制造业等关键领域务实合作、推进产学研用深度融通、推动成果转化应用、共创制造业高质量发展美好未来。&#xA;江淮中心携&amp;quot;启江拆药分装机器人、跳高机器人、绳驱S1机器人、视触灵巧手、无源双髋助力机器人、辅助行走机器人&amp;quot;等产品亮相大会现场。 其中，这款拥有46个自由度的&amp;quot;绳驱S1机器人&amp;quot;凭借其动态场景下出色的自主操作能力火速&amp;quot;出圈&amp;quot;。它采用绳索柔性传动技术，显著提高人机交互的安全性，吸引众多参会者驻足观赏与热情互动。 您的浏览器不支持视频播放。&#xD;在康养领域，江淮中心创新推出的&amp;quot;无源双髋助力机器人&amp;quot;引发广泛关注。这款产品通过创新机械结构，将行走时的动能转化为弹性势能并进行释放，有效降低行走代谢消耗，为老年人等群体提供穿戴助力，是&amp;quot;科技助老&amp;quot;领域的一项创新成果。 江淮中心智能化产品矩阵闪耀大会，充分体现了中心在具身智能领域长期积淀的技术底蕴和科研实力。江淮中心作为省部共建的新型研发机构，设立全国首个以人形机器人为主题的院士工作站及具身智能方向博士后科研工作站，先后获批安徽省人形机器人重点实验室、安徽省人形机器人产业创新中心两大省级平台。构建具身智能&amp;quot;身体-小脑-大脑&amp;quot;能力集，成功发布多款具身智能标志性产品，创新成果斩获国家赛事奖项，具身智能全栈技术稳居全国第一梯队。面向工业、特种、物流、康养、家庭服务等多元应用场景，加速具身智能技术落地。持续推深做实人形机器人、煤矿巡检机器人、工业具身机器人等科研成果&amp;quot;沿途下蛋&amp;quot;机制，产业生态体系稳步建设。以大会为纽带，未来，江淮中心将继续深耕具身智能领域，推动科技创新与产业创新深度融合，积极为安徽省乃至全国智能机器人产业赋能助力，为全球制造业发展注入新动能。&#xA;关于弦动未来科技 安徽弦动未来科技有限公司由江淮前沿技术协同创新中心参股孵化而来，是一家专注于新一代柔性仿肌腱驱动的机器人技术研发与应用的科技创新企业，致力于将先进的柔性仿肌腱技术转化为满足市场需求的可靠绳驱产品和解决方案。</description>
     </item>
   </channel>
 </rss>

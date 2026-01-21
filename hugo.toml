@@ -37,11 +37,11 @@ theme = 'coHub'
 
   # Sitemap Menu
   [[menu.sitemap]]
-  name = "Privacy Policy"
+  name = "皖ICP备********号-*"
   url = "/privacy/"
   weight = 1
   [[menu.sitemap]]
-  name = "Terms"
+  name = "皖公安网备***********号"
   url = "/terms/"
   weight = 2
 
@@ -50,7 +50,7 @@ theme = 'coHub'
   # theme_overrides = "css/overrides.css"
   aboutPageURL = "news"
   contactLink = "/contact/"
-  copyright = "© {year} <a href=\"https://staticmania.com/\" target=\"_blank\">StaticMania </a>"
+  copyright = "<a href=\"https://staticmania.com/\" target=\"_blank\">Copyright © {year} SinxBot 2026. All Rights Reserved</a>"
   fabFormURL =  "https://fabform.io/f/u00kv3-"
   googleAnalytics = "G-JZ95FEWF9K"
   logo = "images/logo.png"
@@ -58,7 +58,7 @@ theme = 'coHub'
   footerDescription = ""
 
   [params.address]
-  address = "安徽省合肥市蜀山高新区中安创谷二期H3栋"
+  address = ""
   email = "business@sinxbot.com"
   openingDesc = "Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days."
   openingHours = "We are open from 7am — 7pm week days."
