@@ -1,7 +1,7 @@
 ---
 title: "央视 | 铁手能捏豆腐？这个机器人为何这么“灵”"
 date: 2025-10-15T22:17:56+06:00
-featureImage: 
+featureImage: 001.png
 tags: ["News"]
 ---
 转载自江淮前沿技术协同创新中心 原文链接

@@ -1,24 +1,13 @@
 <section class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12">
-        <div class="footer-logo">
-          <img class="img-fluid" src="{{ .Site.Params.footerlogo | absURL}}" alt="logo">
-        </div>
-        <p class="footer-description">
-          {{ .Site.Params.footerDescription}}
-        </p>
-        <div class="footer-text-block">
-          <p>
-            {{ .Site.Params.address.address | safeHTML}}
-          </p>
-        </div>
-      </div>
-      {{ $socialIcon := .Site.Params.social}}
-      <div class="col-lg-6 col-md-12 align-self-end">
+  <div class="f_top">
+    <div class="f_top_left">
+      <div class="f_top_left_logo">
+        <img class="img-fluid" src="{{ .Site.Params.footerlogo | absURL}}" alt="logo">
       </div>
     </div>
+    <div class="f_top_right"></div>
   </div>
+    {{ $socialIcon := .Site.Params.social}}
     <div class="f_center">
         <div class="leftx"></div>
         <div class="rightx">

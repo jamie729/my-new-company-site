@@ -231,10 +231,23 @@ section.hero::after {
 }
 
 /* Footer logo: make it smaller and keep it responsive */
-.footer-logo img {
+.footer-logo,
+.f_top_left_logo {
+    margin-bottom: 30px;
+}
+
+.footer-logo img,
+.f_top_left_logo img {
     max-height: 60px;   /* 调整这个数值可以控制 logo 高度 */
     width: auto;
     height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Add hover effect if needed */
+.footer-logo img:hover,
+.f_top_left_logo img:hover {
+    opacity: 0.8;
 }
 
 /* Hero video player icon fix - ensure Themify icon displays correctly */
@@ -343,12 +356,17 @@ body {
 section.footer {
     flex-shrink: 0;
     width: 100%;
-    padding: 300px 0 !important;
+    height: 600px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
 }
 
 @media (max-width: 768px) {
     section.footer {
-        padding: 75px 0 !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 }
 
@@ -356,7 +374,42 @@ section.footer {
 .footer {
     position: relative;
     overflow: hidden;
-    padding-bottom: 140px !important; /* 为两个70px高的div预留空间 */
+    background-color: #f7f8fc;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+
+
+.f_top {
+    width: 100%;
+    height: auto;
+    background-color: #f7f8fc;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: none;
+    min-height: 70px;
+}
+
+.f_top_left,
+.f_top_right {
+    width: 45%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.f_top_left {
+    justify-content: flex-start;
+}
+
+.f_top_right {
+    justify-content: flex-end;
 }
 
 .f_bottom {
