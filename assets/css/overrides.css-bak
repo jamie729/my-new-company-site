@@ -1,0 +1,37 @@
+/* 修复首页banner铺满屏幕的问题 */
+.home-banner,
+.hero-section,
+.banner-section,
+.main-banner {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* 确保背景图片覆盖整个区域 */
+.home-banner::before,
+.hero-section::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    z-index: -1 !important;
+}
+
+/* 响应式设计 - 在小屏幕上也保持合适的高度 */
+@media (max-width: 768px) {
+    .home-banner,
+    .hero-section,
+    .banner-section,
+    .main-banner {
+        min-height: 80vh !important;
+        height: auto !important;
+    }
+}
