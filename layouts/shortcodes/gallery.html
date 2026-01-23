@@ -1,0 +1,32 @@
+<div class="custom-gallery">
+    {{ .Inner }}
+</div>
+
+<style>
+/* 画廊容器布局 */
+.custom-gallery {
+    display: flex;
+    flex-wrap: wrap;       /* 允许换行 */
+    gap: 15px;             /* 图片之间的间距 */
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* 默认：电脑端（一排两张） */
+.custom-gallery img, 
+.custom-gallery p img {    /* 兼容部分 Markdown 渲染器会自动包裹 <p> 标签的情况 */
+    width: calc(50% - 8px); /* 减去 gap 的一半，确保精准并排 */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;    /* 圆角，可选 */
+    margin: 0 !important;  /* 清除主题可能带有的默认边距 */
+}
+
+/* 响应式适配：手机端（一排一张） */
+@media (max-width: 768px) {
+    .custom-gallery img,
+    .custom-gallery p img {
+        width: 100%;       /* 宽度占满 */
+    }
+}
+</style>

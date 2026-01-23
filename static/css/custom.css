@@ -691,3 +691,27 @@ section.footer {
         transform: translateY(-50%);
     }
 }
+
+/* 1. 修正正文颜色（最深），解决你提到的正文颜色比说明文字浅的问题 */
+.post-body, .post-body p {
+    color: #222 !important; /* 极深灰色，确保阅读清晰度 */
+}
+
+/* 2. 强制缩小图片底边距（必须保留，否则间隙会变大） */
+.post-body .custom-md-figure img.post-image {
+    margin-bottom: 2px !important; 
+}
+
+/* 3. 精细控制说明文字样式 */
+.custom-md-figure figcaption.post-image-caption {
+    margin-top: 0 !important;
+    padding-top: 2px !important;
+    display: block;
+    
+    /* 字体样式设置 */
+    font-size: 0.85em !important;   /* 比正文小 */
+    color: #777 !important;        /* 比正文稍浅一点的中灰色，形成视觉层级 */
+    font-weight: normal !important; /* 确保不加粗 */
+    line-height: 1.4 !important;
+    font-style: normal;
+}

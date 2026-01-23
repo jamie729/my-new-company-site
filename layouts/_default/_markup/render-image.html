@@ -1,30 +1,33 @@
-{{/*
-  render-image hook
-  - If image link is a page resource (relative path and present in page bundle), use Hugo image processing to create resized versions and output responsive srcset.
-  - If image link is absolute (starts with /) or resource not found, fall back to outputting original destination.
-  - For video files (.mp4, .webm, .ogg), generate <video> tag with controls.
-  - Always add `post-image` or `post-video` class so CSS from `static/css/custom.css` applies.
-*/}}
 {{ $src := .Destination }}
-{{ $alt := .Text | safeHTMLAttr }}
+{{ $alt := .Text | safeHTML }}
 {{ $title := .Title | safeHTMLAttr }}
 
-{{ if strings.HasPrefix $src "/" }}
-  <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $title }}" class="post-image" loading="lazy" />
-{{ else }}
-  {{ $res := .Page.Resources.GetMatch (printf "**%s" $src) }}
-  {{ if $res }}
-    {{ $ext := lower (path.Ext $src) }}
-    {{ if or (eq $ext ".mp4") (eq $ext ".webm") (eq $ext ".ogg") }}
-      <video src="{{ $res.RelPermalink }}" alt="{{ $alt }}" title="{{ $title }}" class="post-video" controls preload="metadata">
-        您的浏览器不支持视频播放。
-      </video>
-    {{ else }}
-      {{ $small := $res.Resize "600x" }}
-      {{ $large := $res.Resize "1024x" }}
-      <img src="{{ $large.RelPermalink }}" srcset="{{ $small.RelPermalink }} 600w, {{ $large.RelPermalink }} 1024w" sizes="(max-width:1024px) 100vw, 1024px" alt="{{ $alt }}" title="{{ $title }}" class="post-image" loading="lazy" />
-    {{ end }}
+<figure class="post-figure custom-md-figure" style="margin: 1.5em 0; text-align: center;">
+  {{ if strings.HasPrefix $src "/" }}
+    {{/* 增加了 display: block 和 margin: 0 auto 确保下方没有空隙 */}}
+    <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $title }}" class="post-image" loading="lazy" style="display: block; margin: 0 auto; max-width: 100%;" />
   {{ else }}
-    <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $title }}" class="post-image" loading="lazy" />
+    {{ $res := .Page.Resources.GetMatch (printf "**%s" $src) }}
+    {{ if $res }}
+      {{ $ext := lower (path.Ext $src) }}
+      {{ if or (eq $ext ".mp4") (eq $ext ".webm") (eq $ext ".ogg") }}
+        <video src="{{ $res.RelPermalink }}" title="{{ $title }}" class="post-video" controls preload="metadata" style="width: 100%; display: block;">
+          您的浏览器不支持视频播放。
+        </video>
+      {{ else }}
+        {{ $small := $res.Resize "600x" }}
+        {{ $large := $res.Resize "1024x" }}
+        <img src="{{ $large.RelPermalink }}" srcset="{{ $small.RelPermalink }} 600w, {{ $large.RelPermalink }} 1024w" sizes="(max-width:1024px) 100vw, 1024px" alt="{{ $alt }}" title="{{ $title }}" class="post-image" loading="lazy" style="display: block; margin: 0 auto; max-width: 100%;" />
+      {{ end }}
+    {{ else }}
+      <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $title }}" class="post-image" loading="lazy" style="display: block; margin: 0 auto; max-width: 100%;" />
+    {{ end }}
   {{ end }}
-{{ end }}
+
+  {{/* 修改重点：减小 margin-top */}}
+  {{ if .Text }}
+    <figcaption class="post-image-caption">
+      {{ .Text | safeHTML }}
+    </figcaption>
+  {{ end }}
+</figure>
